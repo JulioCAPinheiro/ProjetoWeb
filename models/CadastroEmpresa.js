@@ -1,7 +1,7 @@
 const mongo = require('mongoose');
 
-const empresa = new mongo.Schema({
-    Empresa: {
+const CadastEmpresas = new mongo.Schema({
+    empresas: {
         type: String,
         require: true
     },
@@ -15,4 +15,4 @@ const empresa = new mongo.Schema({
     },
 });
 
-module.exports = mongo.model("Empresa", empresa);
+module.exports = mongo.model("empresas", CadastEmpresas);

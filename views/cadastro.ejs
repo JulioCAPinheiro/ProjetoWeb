@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/routes/rotas.js">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
@@ -25,14 +26,18 @@
   </header>
   <main>
     <section>
-      <form id="CRUD-Form" method="post">
-        <input type="text" id="Input-Form" placeholder="Nome">
+      <form id="CRUD-Form" method="post" action="/create">
+        <input type="text" id="NomeEmpresa" name="Empresa" placeholder="Nome">
         <br>
-        <input type="text" id="Input-Form" placeholder="CNPJ">
+        <input type="email" id="EmailEmpresa" name="Email" placeholder="Escreva o seu E-mail">
         <br>
-        <input type="text" id="Input-Form" placeholder="Localizacao">
+        <input type="password" name="SenhaEmpresa" id="Senhas" placeholder="Digite sua senha">
         <br>
-       <input type="submit" name="EnviarCadastro" id="CadastroEnviado" value="Cadastrar">
+        <input type="text" id="CNPJEmpresa" name="CNPJ" placeholder="CNPJ">
+        <br><br>
+        <input type="number" id="CEPEmpresa" name="CEP" placeholder="Localizacao" min="8">
+        <br><br>
+        <button type="submit" name="Cadastrar">Cadastrar</button>
       </form>
     </section>
   </main>
